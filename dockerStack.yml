@@ -23,6 +23,16 @@ services:
     image: redis
     networks:
       - shared_net
+    volumes:
+      - "data:/data"
 
 networks:
   shared_net:
+volumes:
+  data:
+
+
+#DB - VOLUME add
+#2 http methods 
+#ping db 
+#lock
